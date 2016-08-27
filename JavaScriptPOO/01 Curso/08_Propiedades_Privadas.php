@@ -25,6 +25,9 @@ and open the template in the editor.
             console.log(yo.edad);
             // devuelve undefined ya que edad no se encuentra en el objeto 
             // al no estar declarada a través de this
+            
+             // devuelve undefined ya que edad no se encuentra en el objeto 
+            // al no estar declarada a través de this
 
 
         </script>
