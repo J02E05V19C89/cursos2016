@@ -26,7 +26,7 @@ and open the template in the editor.
             // devuelve undefined ya que edad no se encuentra en el objeto 
             // al no estar declarada a través de this
             
-             // devuelve undefined ya que edad no se encuentra en el objeto 
+            // devuelve undefined ya que edad no se encuentra en el objeto 
             // al no estar declarada a través de this
 
 
