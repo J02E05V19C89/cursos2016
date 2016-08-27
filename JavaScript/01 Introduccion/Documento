@@ -1,0 +1,63 @@
+Java script
+
+Lenguaje de programacion basado en scrips
+
+Ejercicio # 1
+        Caracteristicas
+        -Lenguaje de programacion interpreta
+        -Se interpreta en el navegador
+        -Lenguaje orientado a eventos
+        -Lenguaje orientado a objetos
+
+
+        Elementos de un programa en javaScript
+        Ejercicio E01-01
+
+        Tipo de Instrucciones
+        -Declaracion -- var variable
+        -Incializacion -- variable = 1
+        -Estructuras de control  -- if(variable = 1)
+        -Entrada y salida -- alert();
+
+        Entrada y salida 
+        Nos permiten visualizar y recibir informacion 
+        se usan con cadenas de caracteres
+        Algunos caracteres importantes son
+
+        \n Nueva linea
+        \t Tabulador
+        \r retorno de carro
+        \b Retroceso de un espacio
+
+        intruccion importante
+        document.write()
+
+    E1-03
+
+    Elemento Basicos 
+        variables  ---var = variable; 
+                   ---variable = 1
+
+        Operadores ---variable+1
+        
+        Expresiones --Incremento = variable + 1;
+
+    Sentencias
+            if (variable == 1){}
+            
+
+    Funciones function pulsar(){}        
+
+   VARIABLES E IDENTIFICADORES
+        
+    var variable    
+    variable = 1
+    
+    creacion de la variable
+    palabra reservada var
+    No iniciarse con un numero
+    No coincidir con las palabras reservadas
+    
+    
+    
+    

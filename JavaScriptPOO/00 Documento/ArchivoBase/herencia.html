@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Herencia y constructores</title>
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" type="text/css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<script>
+		function Persona(dni, nombre) {
+			this.dni = dni;
+			this.nombre = nombre;
+		}	
+
+		Persona.prototype.saludar = function() {
+			console.log('Hola me llamo '+this.nombre);
+		}
+
+
+
+		function Estudiante(dni, nombre, numeroMatricula) {
+			Persona.prototype.constructor.call(this, dni, nombre);
+			this.numeroMatricula = numeroMatricula;
+		}
+		Estudiante.prototype = new Persona();
+		Estudiante.prototype.constructor = Estudiante;
+
+		Estudiante.prototype.estudiar = function() {
+			console.log('estudiando...');
+		}
+
+		var yo = new Estudiante('1', 'Marcos', '12');
+		yo.saludar();
+		yo.estudiar();
+
+		console.log(yo.constructor);
+
+	</script>
+</body>
+</html>

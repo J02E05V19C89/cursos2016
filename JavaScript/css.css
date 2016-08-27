@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+/* MODIFICACION DE ETIQUETAS PROPIAS DEL HTML */
+
+html {
+	background-color: #FDFDFD;
+	font-size: 0.75em;
+	background-image: url(images/fondo.jpg);
+	background-repeat: repeat-y;
+	background-position: center;
+}
+body {
+	width: 60em;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+	padding: 1em;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #4D4D4D;
+}
+h1, h2, h3, h4 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+	font-weight: normal;
+	color: #930;
+	font-size: 2em;
+	text-align: right;
+}
+h3 {
+	font-size: 1.4em;
+	color: #FFF;
+	background-color: #002D88;
+	padding: 0.4em;
+}
+h4 {
+	font-size: 1.3em;
+	margin-top: 2em;
+	margin-bottom: 0em;
+}
+p, li {
+	font-size: 0.95em;
+	line-height: 125%;
+}
+acronym {
+	border-bottom-width: 0.1em;
+	border-bottom-style: dotted;
+	border-bottom-color: #900;
+}
+fieldset {
+	background-color: #FFFFF4;
+}
+
+/* ENCABEZADO */
+h1 {
+	background-color: #F7F7F7;
+	padding: 15px;
+	border: 1px solid #E8E8E8;
+	margin: 0em;
+	font-size: 1em;
+	background-image: url(images/carro.jpg);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+#pz{
+	color: #C00;
+	font-size: 3em;
+}
+#shop{
+	font-size: 3em;
+	color: #000;
+}
+	
+#lema{
+	font-weight: bold;
+	font-size: 1.2em;
+	font-style: italic;
+	color: #494949;
+}
+
+/* TABLA DE LA COMPRA */
+
+#tabla_compra {
+	width: 100%;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#tabla_compra td {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	text-align: right;
+	padding-right: 5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+#tabla_compra th {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	text-align: left;
+}
+th#col1, th#col2, th#col3 {
+	text-align: center;
+}
+#tabla_compra thead th {
+	background-color: #F9F9F9;
+	padding: 0.4em;
+	border: 1px solid #EEE;
+}
+#tabla_compra caption {
+	text-align: left;
+	margin-bottom: 2em;
+}
+tr#total td {
+	font-weight: bold;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+	border-right-color: #CCC;
+	border-bottom-color: #CCC;
+	border-left-color: #CCC;
+}
+.nota {
+	font-size: 0.8em;
+	color: #525252;
+	text-align: right;
+	margin-bottom: 4em;
+}
+
+/* FORMULARIO */
+
+label {
+	display: block;
+	margin-bottom: 0.5em;
+}
+fieldset#datos_personales {
+	float: left;
+	width: 46%;
+}
+fieldset#datos_envio {
+	float: right;
+	width: 46%;
+}
+fieldset#observaciones {
+	clear: left;
+}
+.etiqueta_formulario {
+	width: 11em;
+	display: block;
+	float: left;
+	text-align: right;
+	padding-right: 1em;
+}
+#formularioCompra legend {
+	color: #03C;
+}
+.acceskey {
+	text-decoration: underline;
+}
+.obligatorio {
+	color: #C00;
+}
+
+/* PIE DE PAGINA */
+#pie {
+	background-color: #F9F9F9;
+	margin-top: 3em;
+	font-size: 0.8em;
+	padding: 2em;
+	margin-bottom: 0em;
+	text-align: right;
+}

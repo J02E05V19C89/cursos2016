@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Introduccion JavaScript</title>
+<script LANGUAGE="JavaScript">
+function moverVentana()
+{
+	if(i%7 == 0)
+	{
+		mi_ventana.moveBy(0,i/10);
+	}
+	else
+	{
+		mi_ventana.moveBy(1,0);
+	}
+  	 i++;
+     setTimeout('moverVentana()',1);
+	 if (i==300)
+	 mi_ventana.close();
+   
+}
+</script>
+</head>
+<body>
+<script language="javascript">
+
+   var opciones="width=250,height=150";
+   var i= 0;
+   mi_ventana = window.open("","",opciones);
+   mi_ventana.document.write("Caida libre de ventana");
+   moverVentana();
+</script>
+</BODY>
+</HTML> 
+

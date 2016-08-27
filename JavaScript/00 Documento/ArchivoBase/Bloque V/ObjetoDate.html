@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Introduccion JavaScript</title>
+<script language="JavaScript">
+	Meses=new Array ();
+  	Dias=new Array();
+  	Meses[0]="Enero";   Meses[1]="Febrero"; 	Meses[2]="Marzo";   Meses[3]="Abril";
+  	Meses[4]="Mayo";   Meses[5]="Junio"; 	Meses[6]="Julio";   Meses[7]="Agosto";
+  	Meses[8]="Septiembre";   Meses[9]="Octubre"; 	Meses[10]="Noviembre";   Meses[11]="Diciembre";
+
+  	Dias[1]="Lunes";   Dias[2]="Martes";	Dias[3]="Miércoles";  Dias[4]="Jueves";
+	Dias[5]="Viernes";   Dias[6]="Sabado";	Dias[0]="Domingo";   
+  
+  function Convertir(fecha)
+  {
+    	dia=Dias[fecha.getDay()];
+    	mes=Meses[fecha.getMonth()];
+       	anio=fecha.getYear();
+       	if (navigator.appName=="Netscape") 
+		{
+			anio=anio+1900;
+		}
+       	return dia + ", "+ fecha.getDate() + " de " + mes + " de " + anio;
+  }	
+</script>
+</head>
+<body>
+<script language="JavaScript">
+		document.write(Convertir(new Date())); 
+</script>
+</body>
+</html>

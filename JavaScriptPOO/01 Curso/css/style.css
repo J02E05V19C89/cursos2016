@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+
+html { 
+	font-size: 62.5%; 
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 20px;
+	font-family: 'Source Sans Pro', Arail, sans-serif;
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+
+#nota {
+	width: 90%;
+	padding: 10px;
+	color: #5073A3;
+	background-color: #CFE2FC;
+}
+
+#nota > h2 {
+	margin: 0;
+
+	color: #4D7094;
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+#nota > p {
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+a {
+	color: #4D7094;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}

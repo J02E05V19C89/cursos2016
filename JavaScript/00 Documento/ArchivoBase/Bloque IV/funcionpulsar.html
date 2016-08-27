@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Introducción a JavaScript</title>
+<script language="javascript">
+	function pulsar()
+	{
+		//creamos una variable para almacenar el texto
+		var respuesta;
+		//Desplegamos una ventana y almacenamos el valor introducido en la variable
+		respuesta = prompt("¿Estas seguro de que desea realizar esta operacion?","");
+		// Comprobar que se haya escrito texto y sacar la respuesta en un mensaje de alerta
+		if (respuesta)
+		{
+			alert("Ha respondido " + respuesta);
+		}
+		else
+		{
+			alert("Ha reusado contestar");
+		}
+	
+	}
+</script>
+</head>
+
+<body>
+	<h1>Funciones</h1>
+	<p onClick="pulsar()">Apreta aquí</p>
+    <p onClick="pulsar()">Apreta aquí</p>
+    <p onClick="pulsar()">Apreta aquí</p>
+    <p onClick="pulsar()">Apreta aquí</p>
+</body>
+</html>

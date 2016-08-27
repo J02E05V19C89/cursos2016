@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Introducción a JavaScript</title>
+</head>
+
+<body>
+<h1>Mi Calculadora</h1>
+<script language="javascript">
+		var operacion;
+		var numero1;
+		var numero2;
+		var aux = 2;
+		
+		do{
+			numero1 = prompt("Introduzca el primer número");
+			if (isNaN(numero1))
+			{
+				alert("El valor introducido no es correcto");
+			}
+		}while(isNaN(numero1))
+		
+		do{
+			numero2 = prompt("Introduzca el segundo número");
+			if (isNaN(numero2))
+			{
+				alert("El valor introducido no es correcto");
+			}
+		}while(isNaN(numero2))
+		
+		numero1 =parseInt(numero1);
+		numero2 =parseInt(numero2);
+		
+		while(aux != 1)
+		{
+			operacion = prompt("Listado de operaciones: \n + sumar \n - restar \n * multiplicar \n / dividir \n % modulo","");
+			switch(operacion)
+			{
+				case "+":	alert(numero1+numero2);aux = 1; break;
+				case "-": 	alert(numero1-numero2);aux = 1; break;
+				case "*":	alert(numero1*numero2);aux = 1; break;
+   				case "/":	alert(numero1/numero2);aux = 1; break;
+				case "%":	alert(numero1%numero2);aux = 1; break;
+				default:	alert("La operacion no es valida");
+			}
+		}
+
+</script>
+</body>
+</html>

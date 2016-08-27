@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Introducción a JavaScript</title>
+<script language="javascript">
+	function persona (Nombre, Apellidos, Localidad, Pais)
+	{
+		this.nombre=Nombre;
+		this.apellidos=Apellidos;
+		this.localidad=Localidad;
+		this.pais=Pais;
+		this.obtener_datos=Obtener_datos;
+	}
+	function Obtener_datos()
+	{
+		var datos = this.nombre+" "+this.apellidos+" de "+this.localidad+" ("+this.pais+")";
+		return (datos);
+	}
+	
+</script>
+</head>
+
+<body>
+<script language="javascript">
+	var yo = new persona("Luis","Alonso","Oviedo","España");
+	alert(yo.obtener_datos());
+</script> 
+</body>
+</html>

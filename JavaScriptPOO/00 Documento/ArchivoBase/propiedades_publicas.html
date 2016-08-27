@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Propiedades públicas</title>
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" type="text/css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<script>
+		function Persona(dni, nombre) {
+			this.dni = dni;
+			this.nombre = nombre;
+		}	
+
+		var yo = new Persona('1234567', 'Marcos');
+		var tu = new Persona('7654321', 'Pedro');
+
+		tu['nombre'] = 'Otro';
+
+		console.log(yo);
+		console.log(tu);
+	</script>
+</body>
+</html>

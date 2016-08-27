@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Introduccion JavaScript</title>
+<script language="javascript">
+	function frame2()
+	{
+		document.write("Mi nombre es: "+self.name +"<br>");
+		document.write("Nombre del frame de arriba: "+top.frames[0].name +"<br>");
+		document.write("Url: "+self.location +"<br>");
+		document.write("Url de mi padre: "+parent.location +"<br>");
+	}
+</script>
+</head>
+<body>
+<script language="javascript">
+	frame2();
+</script>
+</body>
+</html> 

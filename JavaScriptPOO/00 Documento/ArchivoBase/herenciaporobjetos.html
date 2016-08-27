@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Herencia basada en objetos</title>
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" type="text/css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<script>
+	var persona = {
+		dni: '',
+		nombre: '',
+		amigos: null,
+
+		init: function(dni, nombre) {
+			this.dni = dni;
+			this.nombre = nombre;
+			this.amigos = new Array();
+
+			return this;
+		},
+
+		saludar: function() {
+			console.log('Hola me llamo '+this.nombre);
+		}
+	};
+
+	var estudiante = Object.create(persona, {
+		numeroMatricula: {
+			get: function() {
+				return this.value;
+			},
+			set: function(newValue) {
+				this.value = newValue;
+			}
+		},
+
+		init: {
+			value: function(dni, nombre, numeroMatricula) {
+				persona.init.call(this, dni, nombre);
+				this.numeroMatricula = numeroMatricula;
+				return this;
+			}
+		},
+
+		estudiar: {
+			value: function() {
+				console.log('estudiando > '+this.numeroMatricula);
+			}
+		}
+	});
+
+	var yo = Object.create(estudiante).init('1','Marcos','12');
+	yo.saludar();
+	yo.numeroMatricula = '333';
+	yo.estudiar();
+	</script>
+</body>
+</html>
