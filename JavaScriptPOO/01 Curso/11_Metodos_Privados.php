@@ -27,7 +27,7 @@ and open the template in the editor.
                     edad++;
                     if (edad >= edadParaSaludar)
                     {
-                        _this.saludar('');
+                        _this.saludar('');                        
                     }
                 }
 
@@ -35,13 +35,9 @@ and open the template in the editor.
                     envejecer();
                 }
             }
-
             Persona.prototype.saludar = function (nombre) {
                 console.log(this.nombre + ' te saluda ' + nombre);
             }
-
-
-
             var yo = new Persona('1', 'Marcos');
             console.log(yo.edad);
             // devuelve undefined ya que edad no se encuentra en el objeto 
